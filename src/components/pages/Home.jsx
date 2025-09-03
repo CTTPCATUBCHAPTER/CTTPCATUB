@@ -27,24 +27,29 @@ const Home = () => {
   const recentEvents = [
     {
       id: 1,
-      title: 'Sunday Worship Service',
-      description: 'Join us for an inspiring worship experience',
-      videoUrl: 'https://www.youtube.com/embed/7tEu9JEDimQ',
-      thumbnail: 'https://img.youtube.com/vi/7tEu9JEDimQ/maxresdefault.jpg'
+      title: '50th GOLDEN ANNIVERSARY',
+      description: 'June 22, 2025',
+      videoUrl: 'https://www.youtube.com/embed/W1B6T_bksQA',
+      thumbnail: 'https://img.youtube.com/vi/W1B6T_bksQA/maxresdefault.jpg'
+
     },
     {
       id: 2,
-      title: 'Youth Ministry Gathering',
-      description: 'Young hearts coming together in faith',
-      videoUrl: 'https://www.youtube.com/embed/W1B6T_bksQA',
-      thumbnail: 'https://img.youtube.com/vi/W1B6T_bksQA/maxresdefault.jpg'
-    },
-    {
-      id: 3,
-      title: 'Community Outreach',
-      description: 'Serving our community with love',
+      title: 'CTTP THANKSGIVING SUNDAY',
+      description: 'November 17, 2024',
       videoUrl: 'https://www.youtube.com/embed/6fpNW6OBxrw',
       thumbnail: 'https://img.youtube.com/vi/6fpNW6OBxrw/maxresdefault.jpg'
+
+    
+    },
+    {
+    
+
+      id: 3,
+      title: 'THANKSGIVING DAY',
+      description: 'May 12, 2024',
+      videoUrl: 'https://www.youtube.com/embed/7tEu9JEDimQ',
+      thumbnail: 'https://img.youtube.com/vi/7tEu9JEDimQ/maxresdefault.jpg'
     }
   ]
 
@@ -244,7 +249,7 @@ const Home = () => {
                 <p className="text-lg font-semibold">Sunday Worship</p>
                 <p className="text-gray-600">9:00 AM to 12:00 AM</p>
                 <p className="text-lg font-semibold mt-4">Sunday School</p>
-                <p className="text-gray-600">7:00 PM</p>
+                <p className="text-gray-600">7:00 AM</p>
               </CardContent>
             </Card>
 
