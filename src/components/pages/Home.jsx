@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Clock, MapPin, Users, Heart, BookOpen, ArrowRight, Play, X, ChevronLeft, ChevronRight } from 'lucide-react'
@@ -88,6 +89,17 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+
+      {/* SEO */}
+      <Helmet>
+        <title>Christ to the Philippines - Catub Chapter</title>
+        <meta name="description" content="Welcome to Christ to the Philippines - Catub Chapter. Join us for worship, events, and ministries that grow your faith." />
+        <meta name="keywords" content="church, Philippines, worship, ministry, events, youth, children, outreach" />
+        <meta name="author" content="Christ to the Philippines - Catub Chapter" />
+        <meta property="og:title" content="Christ to the Philippines - Catub Chapter" />
+        <meta property="og:description" content="Join our community for worship, events, and ministries that nurture your faith." />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative h-screen flex items-start justify-center">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroakoImg})` }} />
