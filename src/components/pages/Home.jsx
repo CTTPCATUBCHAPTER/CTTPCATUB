@@ -243,7 +243,7 @@ const Home = () => {
               <CardContent>
                 <p className="text-lg font-semibold">Sunday Worship</p>
                 <p className="text-gray-600">9:00 AM to 12:00 AM</p>
-                <p className="text-lg font-semibold mt-4">Bible School</p>
+                <p className="text-lg font-semibold mt-4">Sunday School</p>
                 <p className="text-gray-600">7:00 PM</p>
               </CardContent>
             </Card>

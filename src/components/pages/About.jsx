@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { 
+  
   Cross, 
   Heart, 
   Users, 
@@ -20,6 +21,9 @@ import {
 // Import images
 import heroImg from '../../assets/images/hero.jpg'
 import congregationImg from '../../assets/images/churchf.jpg'
+import pastoraImg from '../../assets/images/pastora.jpg'
+import { Link } from 'react-router-dom'
+
 
 
 const About = () => {
@@ -138,8 +142,8 @@ const About = () => {
       name: "Ptr. Elizabeth C. Leon",
       position: "Host Pastor",
       description: "Ptr. Elizabeth leads our congregation with dedication and passion for spreading the Gospel. She oversees the ministry and spiritual growth of our church family.",
-      email: "pastor.elizabeth@cttpphilippines.org",
-      phone: "(+63) 361-0942-608",
+      email: "Liza123leon@gmail.com",
+      phone: "(+63) 9369090646",
       image: "/api/placeholder/300/300" // Placeholder for now
     },
   ]
@@ -271,7 +275,7 @@ const About = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                   <div className="relative h-64 lg:h-auto">
                     <img 
-                      src={congregationImg} 
+                      src={pastoraImg} 
                       alt={leader.name}
                       className="w-full h-full object-cover"
                     />
@@ -391,9 +395,11 @@ const About = () => {
           <p className="text-xl mb-8 text-blue-100">
             We'd love to answer your questions and help you get connected with our church family.
           </p>
+            <Link to="/contact">
           <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-blue-50">
             Contact Us Today
           </Button>
+          </Link>
         </div>
       </section>
     </div>

@@ -25,16 +25,16 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["Main: (+63) 961-0942-608", "Prayer Line: Available Soon"],
+      details: ["Main: (+63) 936-9090-646"],
       action: "Call Us",
-      url: "tel:+639610942608"
+      url: "Phone: (+63)9369090646"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@cttpcatub.com", "pastor@cttpcatub.com"],
+      details: ["Liza123leon@gmail.com"],
       action: "Send Email",
-      url: "mailto:info@cttpcatub.com"
+      url: "mailto:Liza123leon@gmail.com"
     },
   ]
 
@@ -207,7 +207,7 @@ const Contact = () => {
                   <div className="space-y-3">
                     <div className="flex justify-between">
                       <span className="font-medium">Sunday Worship</span>
-                      <span className="text-gray-600">9:00 AM & 11:00 AM</span>
+                      <span className="text-gray-600">9:00 AM To 11:00 AM</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-medium">Sunday School</span>
@@ -263,12 +263,12 @@ const Contact = () => {
               onClick={() => window.open("tel:+639610942608")}
             >
               <Phone className="mr-2 h-4 w-4" />
-              Call Prayer Line: (+63) 9610942608
+              Call Prayer Line: (+63) 9369090646
             </Button>
             <Button 
               variant="outline" 
               className="border-red-600 text-red-600 hover:bg-red-50"
-              onClick={() => window.open("mailto:pastor@cttpcatub.com")}
+              onClick={() => window.open("mailto:Liza123leon@gmail.com")}
             >
               <Mail className="mr-2 h-4 w-4" />
               Email Pastor Directly
