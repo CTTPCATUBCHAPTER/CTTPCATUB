@@ -151,6 +151,16 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
+
+      <Helmet>
+        <title>Christ to the Philippines - Catub Chapter/About</title>
+    
+        <meta name="keywords" content="Catub chapter, cttp, catub, cttp catub, catub church, cttp catub chapter, christ to the philippines, catub, christ to the philippines - catub chapter, catub church, CTTP CATUB, Cttp, cttp catub church, church, Philippines, worship, ministry, events, youth, children, outreach" />
+        <meta name="author" content="Christ to the Philippines - Catub Chapter" />
+      
+        
+        <meta property="og:type" content="website" />
+      </Helmet>
       <section className="relative py-15 bg-gradient-to-r from-blue-900 to-blue-700">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
