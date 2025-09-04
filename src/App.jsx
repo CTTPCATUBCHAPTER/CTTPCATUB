@@ -15,7 +15,6 @@ import Giving from './components/pages/Giving';
 import Resources from './components/pages/Resources';
 import ChurchGallery from './components/pages/ChurchGallery';
 
-
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -26,6 +25,8 @@ function App() {
         <Header />
         <main>
           <Routes>
+            {/* Added root path to render Home component */}
+            <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/sermons" element={<Sermons />} />
@@ -35,7 +36,6 @@ function App() {
             <Route path="/churchgallery" element={<ChurchGallery />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/contact" element={<Contact />} />
-           
           </Routes>
         </main>
         <Footer />
