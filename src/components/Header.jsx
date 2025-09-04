@@ -11,7 +11,7 @@ const Header = () => {
   const closeMenu = () => setIsMenuOpen(false)
 
   const navItems = [
-    { name: 'Home', path: '/home' },
+    { name: 'Home', path: '/' },               // <-- Changed here from /home to /
     { name: 'About', path: '/about' },
     { name: 'Sermons', path: '/sermons' },
     { name: 'Events', path: '/events' },
@@ -20,7 +20,6 @@ const Header = () => {
     { name: 'Church Gallery', path: '/churchgallery' },
     { name: 'Resources', path: '/resources' },
     { name: 'Contact', path: '/contact' },
-    
   ]
 
   return (
@@ -62,6 +61,8 @@ const Header = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
               className="inline-flex items-center justify-center p-2 rounded-md text-orange-600 hover:text-orange-700 hover:bg-orange-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
