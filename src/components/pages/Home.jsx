@@ -94,7 +94,7 @@ const Home = () => {
       <Helmet>
         <title>Christ to the Philippines - Catub Chapter</title>
         <meta name="description" content="Welcome to Christ to the Philippines - Catub Chapter. Join us for worship, events, and ministries that grow your faith." />
-        <meta name="keywords" content="church, Philippines, worship, ministry, events, youth, children, outreach" />
+        <meta name="keywords" content="Catub chapter, cttp catub chapter, christ to the philippines, catub, christ to the philippines - catub chapter, catub church, CTTP CATUB, Cttp, cttp catub church, church, Philippines, worship, ministry, events, youth, children, outreach" />
         <meta name="author" content="Christ to the Philippines - Catub Chapter" />
         <meta property="og:title" content="Christ to the Philippines - Catub Chapter" />
         <meta property="og:description" content="Join our community for worship, events, and ministries that nurture your faith." />
