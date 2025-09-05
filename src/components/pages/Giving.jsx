@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Helmet } from 'react-helmet'
 import { Heart, CreditCard, Smartphone, Building, MessageCircle } from 'lucide-react'
 
 // Step 1: Import your image here (adjust the path to your actual location)
@@ -11,6 +12,34 @@ const Giving = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Give Online | Christ to the Philippines - Catub Chapter</title>
+        <meta
+          name="description"
+          content="Support God's work through Christ to the Philippines - Catub Chapter by giving online. Choose the best method to bless our ministry."
+        />
+        <meta
+          name="keywords"
+          content="Give Online, Donations, Support, GCash, Bank Transfer, Christ to the Philippines, Catub Chapter"
+        />
+        <meta name="author" content="Christ to the Philippines - Catub Chapter" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="Give Online | Christ to the Philippines - Catub Chapter"
+        />
+        <meta
+          property="og:description"
+          content="Support God's work through Christ to the Philippines - Catub Chapter by giving online. Choose the best method to bless our ministry."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cttpcatubchapter.com/giving" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://cttpcatubchapter.com/giving" />
+      </Helmet>
+      
       <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Heart className="h-16 w-16 mx-auto mb-6 text-blue-200" />

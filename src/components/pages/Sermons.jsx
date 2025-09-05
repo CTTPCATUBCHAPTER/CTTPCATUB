@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Helmet } from 'react-helmet'
 import { 
   Play, 
   Calendar, 
@@ -101,6 +102,34 @@ const Sermons = () => {
 
   return (
     <div className="min-h-screen">
+
+      <Helmet>
+        <title>Sermons & Messages | Christ to the Philippines - Catub Chapter</title>
+        <meta
+          name="description"
+          content="Grow in your faith through biblical teaching and practical application. Listen to sermons by Ptr. Elizabeth C. Leon."
+        />
+        <meta
+          name="keywords"
+          content="Sermons, Messages, Faith, Worship, Ptr. Elizabeth C. Leon, Christ to the Philippines, Catub Chapter"
+        />
+        <meta name="author" content="Christ to the Philippines - Catub Chapter" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="Sermons & Messages | Christ to the Philippines - Catub Chapter"
+        />
+        <meta
+          property="og:description"
+          content="Grow in your faith through biblical teaching and practical application. Listen to sermons by Ptr. Elizabeth C. Leon."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cttpcatubchapter.com/sermons" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://cttpcatubchapter.com/sermons" />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

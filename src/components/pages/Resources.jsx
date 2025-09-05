@@ -1,11 +1,40 @@
 import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Helmet } from 'react-helmet'
 import { BookOpen, Download, HelpCircle, Rss } from 'lucide-react'
 
 const Resources = () => {
   return (
     <div className="min-h-screen">
+
+      <Helmet>
+        <title>Resources | Christ to the Philippines - Catub Chapter</title>
+        <meta
+          name="description"
+          content="Access tools and materials to help you grow in your faith journey. Explore devotionals, Bible study guides, FAQs, and more."
+        />
+        <meta
+          name="keywords"
+          content="Resources, Devotionals, Bible Study, FAQs, Faith Growth, Christ to the Philippines, Catub Chapter"
+        />
+        <meta name="author" content="Christ to the Philippines - Catub Chapter" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="Resources | Christ to the Philippines - Catub Chapter"
+        />
+        <meta
+          property="og:description"
+          content="Access tools and materials to help you grow in your faith journey. Explore devotionals, Bible study guides, FAQs, and more."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cttpcatubchapter.com/resources" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://cttpcatubchapter.com/resources" />
+      </Helmet>
       <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <BookOpen className="h-16 w-16 mx-auto mb-6 text-blue-200" />

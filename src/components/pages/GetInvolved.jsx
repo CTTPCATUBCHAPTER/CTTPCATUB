@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Helmet } from 'react-helmet'
 import { Users, Heart, HandHeart, BookOpen } from 'lucide-react'
 
 const GetInvolved = () => {
@@ -47,6 +48,34 @@ const GetInvolved = () => {
 
   return (
     <div className="min-h-screen">
+<Helmet>
+        <title>Get Involved | Christ to the Philippines - Catub Chapter</title>
+        <meta
+          name="description"
+          content="Find your place in our church family and make a difference. Explore ministry opportunities to serve God and others."
+        />
+        <meta
+          name="keywords"
+          content="Get Involved, Ministries, Service, Faith, Christ to the Philippines, Catub Chapter"
+        />
+        <meta name="author" content="Christ to the Philippines - Catub Chapter" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="Get Involved | Christ to the Philippines - Catub Chapter"
+        />
+        <meta
+          property="og:description"
+          content="Find your place in our church family and make a difference. Explore ministry opportunities to serve God and others."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cttpcatubchapter.com/get-involved" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://cttpcatubchapter.com/get-involved" />
+      </Helmet>
+
       <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <HandHeart className="h-16 w-16 mx-auto mb-6 text-blue-200" />

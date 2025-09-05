@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Helmet } from 'react-helmet'
 import { Calendar, Clock, MapPin, X } from 'lucide-react'
 
 const Events = () => {
@@ -47,6 +48,33 @@ const Events = () => {
 
   return (
     <div className="min-h-screen relative">
+      <Helmet>
+        <title>Events & Calendar | Christ to the Philippines - Catub Chapter</title>
+        <meta
+          name="description"
+          content="Stay connected with upcoming events and activities in the Christ to the Philippines - Catub Chapter community."
+        />
+        <meta
+          name="keywords"
+          content="Events, Calendar, Church Events, Special Services, Youth Events, Children Events, Christ to the Philippines, Catub Chapter"
+        />
+        <meta name="author" content="Christ to the Philippines - Catub Chapter" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="Events & Calendar | Christ to the Philippines - Catub Chapter"
+        />
+        <meta
+          property="og:description"
+          content="Stay connected with upcoming events and activities in the Christ to the Philippines - Catub Chapter community."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cttpcatubchapter.com/events" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://cttpcatubchapter.com/events" />
+      </Helmet>
       {/* Header Section */}
       <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

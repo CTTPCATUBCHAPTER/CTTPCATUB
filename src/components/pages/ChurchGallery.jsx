@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Helmet } from 'react-helmet'
 import { Image, FolderOpen, X, ArrowLeft } from 'lucide-react'
 
 // Image imports
@@ -210,6 +211,31 @@ const ChurchGallery = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       {/* Hero Section */}
+<Helmet>
+        <title>Church Gallery - Christ to the Philippines - Catub Chapter</title>
+        <meta
+          name="description"
+          content="Browse the gallery of Christ to the Philippines - Catub Chapter to view moments from worship services, outreach events, and more."
+        />
+        <meta
+          name="keywords"
+          content="Church Gallery, Catub Chapter, Christian Church Photos, Worship Events, Ministries, Youth, Women, Men, Children, Outreach"
+        />
+        <meta name="author" content="Christ to the Philippines - Catub Chapter" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Church Gallery - Christ to the Philippines - Catub Chapter" />
+        <meta
+          property="og:description"
+          content="Explore the moments of worship, fellowship, and outreach in our church gallery."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cttpcatubchapter.com/churchgallery" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://cttpcatubchapter.com/churchgallery" />
+      </Helmet>
+
       <section className="relative py-24 bg-gradient-to-r from-indigo-900 via-blue-900 to-purple-900 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
