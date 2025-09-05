@@ -99,6 +99,8 @@ const Home = () => {
         <meta property="og:title" content="Christ to the Philippines - Catub Chapter" />
         <meta property="og:description" content="Join our community for worship, events, and ministries that nurture your faith." />
         <meta property="og:type" content="website" />
+          <link rel="canonical" href="https://cttpcatubchapter.com" />
+
       </Helmet>
       {/* Hero Section */}
       <section className="relative h-screen flex items-start justify-center">
