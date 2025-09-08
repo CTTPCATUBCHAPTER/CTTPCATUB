@@ -13,21 +13,21 @@ const Giving = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Give Online | Christ to the Philippines - Catub Chapter</title>
+        <title>Giving | Christ to the Philippines - Catub Chapter</title>
         <meta
           name="description"
           content="Support God's work through Christ to the Philippines - Catub Chapter by giving online. Choose the best method to bless our ministry."
         />
         <meta
           name="keywords"
-          content="Give Online, Donations, Support, GCash, Bank Transfer, Christ to the Philippines, Catub Chapter"
+          content="Giving, Donations, Support, GCash, Bank Transfer, Christ to the Philippines, Catub Chapter"
         />
         <meta name="author" content="Christ to the Philippines - Catub Chapter" />
 
         {/* Open Graph / Facebook */}
         <meta
           property="og:title"
-          content="Give Online | Christ to the Philippines - Catub Chapter"
+          content="Giving | Christ to the Philippines - Catub Chapter"
         />
         <meta
           property="og:description"
