@@ -11,15 +11,15 @@ const Header = () => {
   const closeMenu = () => setIsMenuOpen(false)
 
   const navItems = [
-    { name: 'Home', path: '/' },               // <-- Changed here from /home to /
-    { name: 'About', path: '/about' },
+    { name: 'Home', path: '/' },
+    { name: 'About Us', path: '/about' },
     { name: 'Sermons', path: '/sermons' },
-    { name: 'Events', path: '/events' },
+    { name: 'Upcoming Events', path: '/events' },
     { name: 'Get Involved', path: '/get-involved' },
-    { name: 'Giving', path: '/giving' },
+    { name: 'Tithes & Offerings', path: '/giving' },
     { name: 'Church Gallery', path: '/churchgallery' },
     { name: 'Resources', path: '/resources' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Contact Us', path: '/contact' },
   ]
 
   return (
@@ -45,9 +45,7 @@ const Header = () => {
                 key={item.name}
                 to={item.path}
                 className={`px-4 py-2 text-sm font-medium rounded-md transition-colors duration-200 ${
-                  item.name === 'Sign Up'
-                    ? 'bg-green-500 text-white hover:bg-green-600'
-                    : location.pathname === item.path
+                  location.pathname === item.path
                     ? 'bg-orange-500 text-white'
                     : 'text-orange-600 hover:bg-orange-50 hover:text-orange-700'
                 }`}

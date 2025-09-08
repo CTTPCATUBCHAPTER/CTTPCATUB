@@ -89,10 +89,12 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/sermons" className="text-gray-300 hover:text-white transition-colors">Sermons</Link></li>
-              <li><Link to="/events" className="text-gray-300 hover:text-white transition-colors">Events</Link></li>
+              <li><Link to="/events" className="text-gray-300 hover:text-white transition-colors">Upcoming Events</Link></li>
               <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Get Involved</Link></li>
-              <li><Link to="/giving" className="text-gray-300 hover:text-white transition-colors">Give Online</Link></li>
+              <li><Link to="/giving" className="text-gray-300 hover:text-white transition-colors">Tithes & Offerings</Link></li>
               <li><Link to="/resources" className="text-gray-300 hover:text-white transition-colors">Resources</Link></li>
+              <li><Link to="/churchgallery" className="text-gray-300 hover:text-white transition-colors">Church Gallery</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -100,10 +102,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Ministries</h3>
             <ul className="space-y-2">
-              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Men Ministry</Link></li>
-              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Women Ministry</Link></li>
+              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Men’s Ministry</Link></li>
+              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Women’s Ministry</Link></li>
               <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Youth Ministry</Link></li>
-              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Children Ministry</Link></li>
+              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Children’s Ministry</Link></li>
               <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Music Ministry</Link></li>
               <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Outreach Ministry</Link></li>
             </ul>
