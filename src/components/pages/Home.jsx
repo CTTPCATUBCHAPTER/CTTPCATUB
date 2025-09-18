@@ -114,6 +114,33 @@ const Home = () => {
 
   {/* Canonical URL */}
   <link rel="canonical" href="https://cttpcatubchapter.com" />
+
+  {/* ✅ Structured Data JSON-LD for Church */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Church",
+      "name": "Christ to the Philippines - Catub Chapter",
+      "alternateName": "CTTP Catub Chapter",
+      "url": "https://cttpcatubchapter.com",
+      "logo": "https://cttpcatubchapter.com/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Purok 06, Sitio Catub, Paddaoan",
+        "addressLocality": "Conner",
+        "addressRegion": "Apayao",
+        "addressCountry": "PH"
+      },
+      "telephone": "+639369090646",
+      "sameAs": [
+        "https://facebook.com/61552938899679",
+        "https://youtube.com/yourchannel"
+      ]
+    }
+    `}
+  </script>
+
 </Helmet>
 
       {/* Hero Section */}
