@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { 
-  Cross, 
+  Church,
   Phone, 
   Mail, 
   Facebook, 
@@ -50,10 +50,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Grid Sections */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
           {/* Church Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Cross className="h-8 w-8 text-blue-400" />
+              <Church className="h-8 w-8 text-blue-400" />
               <div className="flex flex-col">
                 <span className="text-xl font-bold">Christ to the Philippines</span>
                 <span className="text-sm text-gray-400">Catub Chapter</span>
@@ -63,23 +64,23 @@ const Footer = () => {
               A welcoming community where faith, hope, and love come together. 
               Join us as we grow in our relationship with God and serve our community.
             </p>
-            <div className="flex space-x-4">
-              <Button
-                variant="ghost"
-                size="sm"
+            <div className="flex space-x-4 mt-4">
+              <a 
+                href="https://www.facebook.com/61552938899679"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white"
-                onClick={() => window.open('https://www.facebook.com/61552938899679', '_blank')}
               >
                 <Facebook className="h-5 w-5" />
-              </Button>
-              <Button 
-                variant="ghost" 
-                size="sm" 
+              </a>
+              <a 
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white"
-                onClick={() => window.open('https://www.youtube.com', '_blank')}
               >
                 <Youtube className="h-5 w-5" />
-              </Button>
+              </a>
             </div>
           </div>
 
@@ -89,9 +90,9 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/sermons" className="text-gray-300 hover:text-white transition-colors">Sermons</Link></li>
-              <li><Link to="/events" className="text-gray-300 hover:text-white transition-colors">Upcoming Events</Link></li>
+              <li><Link to="/events" className="text-gray-300 hover:text-white transition-colors">Events</Link></li>
               <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Get Involved</Link></li>
-              <li><Link to="/giving" className="text-gray-300 hover:text-white transition-colors">Tithes & Offerings</Link></li>
+              <li><Link to="/giving" className="text-gray-300 hover:text-white transition-colors">Giving</Link></li>
               <li><Link to="/resources" className="text-gray-300 hover:text-white transition-colors">Resources</Link></li>
               <li><Link to="/churchgallery" className="text-gray-300 hover:text-white transition-colors">Church Gallery</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</Link></li>
@@ -102,12 +103,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Ministries</h3>
             <ul className="space-y-2">
-              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Men’s Ministry</Link></li>
-              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Women’s Ministry</Link></li>
-              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Youth Ministry</Link></li>
-              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Children’s Ministry</Link></li>
-              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Music Ministry</Link></li>
-              <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Outreach Ministry</Link></li>
+              <li><Link to="/ministries/mens" className="text-gray-300 hover:text-white transition-colors">Men’s Ministry</Link></li>
+              <li><Link to="/ministries/womens" className="text-gray-300 hover:text-white transition-colors">Women’s Ministry</Link></li>
+              <li><Link to="/ministries/youth" className="text-gray-300 hover:text-white transition-colors">Youth Ministry</Link></li>
+              <li><Link to="/ministries/children" className="text-gray-300 hover:text-white transition-colors">Children’s Ministry</Link></li>
+              <li><Link to="/ministries/music" className="text-gray-300 hover:text-white transition-colors">Music Ministry</Link></li>
+              <li><Link to="/ministries/outreach" className="text-gray-300 hover:text-white transition-colors">Outreach Ministry</Link></li>
             </ul>
           </div>
 
@@ -117,11 +118,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300 text-sm">(+63)9610942608</span>
+                <a href="tel:+639610942608" className="text-gray-300 hover:text-white text-sm">
+                  (+63) 961 094 2608
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300 text-sm">cttpcatubchapter.com</span>
+                <a href="mailto:info@cttpcatubchapter.com" className="text-gray-300 hover:text-white text-sm">
+                  info@cttpcatubchapter.com
+                </a>
               </div>
             </div>
           </div>
@@ -135,7 +140,7 @@ const Footer = () => {
 
             <form
               onSubmit={handleSubscribe}
-              className="flex flex-col sm:flex-row max-w-md mx-auto gap-2"
+              className="flex flex-col sm:flex-row max-w-md mx-auto gap-2 w-full"
             >
               <input
                 type="email"
@@ -143,12 +148,12 @@ const Footer = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="flex-1 px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
                 required
               />
               <Button
                 type="submit"
-                className="bg-blue-600 hover:bg-blue-700"
+                className="bg-blue-600 hover:bg-blue-700 w-full sm:w-auto"
                 disabled={submitting}
               >
                 {submitting ? 'Subscribing...' : 'Subscribe'}
