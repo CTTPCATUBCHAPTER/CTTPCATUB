@@ -99,7 +99,7 @@ const Home = () => {
   />
   <meta
     name="keywords"
-    content="CTTP Catub Chapter, Christ to the Philippines, Catub Church, Christian Church Philippines, Worship, Outreach, Youth Ministry"
+    content="CTTP Catub Chapter, cttp, CTTP Catub, Christ to the Philippines, Christ to the philippines, Catub, catub church, church of catub, Catub Church, Christ to the Philippines, Catub Church, Christian Church Philippines, Worship, Outreach, Youth Ministry"
   />
   <meta name="author" content="Christ to the Philippines - Catub Chapter" />
 
